@@ -28,9 +28,9 @@ export function NewTodoForm({ onSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="m-3">
+    <form onSubmit={handleSubmit} className="mt-6 p-2 border-2 rounded">
       <div className="flex flex-col space-y-3">
-        <label htmlFor="item" className="bold">New Task</label>
+        <label htmlFor="item" className="bold">Create a New Task</label>
         <div className="flex">
             <span>Name:</span>
             <input
@@ -89,7 +89,7 @@ export function NewTodoForm({ onSubmit }) {
               <option>p.m</option>
             </select>
         </div>
-        <button className="mr-auto w-fit pl-2 pr-2 rounded bg-[#6D5D6E] hover:bg-[#6D5D7E]">Add</button>
+        <button className="text-center w-full pl-2 pr-2 rounded bg-[#6D5D6E] hover:bg-[#6D5D7E]">Add</button>
       </div>
     </form>
   )

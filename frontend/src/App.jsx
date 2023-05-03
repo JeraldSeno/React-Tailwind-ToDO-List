@@ -44,8 +44,8 @@ export default function App() {
   return (
     <div className="max-w-sm mx-auto">
       <NewTodoForm onSubmit={addTodo} />
-      <h1 className="m-5 text-center">Todo List</h1>
-      <table className="w-full">
+      <h1 className="m-5 text-center p-2 border-2 rounded">Todo List</h1>
+      <table className="w-full p-2 border-2">
         <tr>
           <th>Done</th>
           <th>Name</th>
