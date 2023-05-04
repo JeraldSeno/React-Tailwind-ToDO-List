@@ -45,7 +45,14 @@ export default function App() {
     <div className="max-w-sm mx-auto">
       <NewTodoForm onSubmit={addTodo} />
       <h1 className="m-5 text-center p-2 border-2 rounded">Todo List</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+      <div className="flex justify-center">
+      <button className="h-7 mt-6 text-center w-fit" mx-auto>
+        <a href="https://github.com/JeraldSeno/React-Tailwind-ToDO-List" target="_blank">
+          <img className="h-5 m-auto" src="src/Svg/github.svg" alt="github"/>
+        </a>
+      </button>
+      </div>
     </div>
   )
 }
